@@ -2,7 +2,7 @@
 title: MetaOCT Virtual Eye Clinic Environment
 sdk: docker
 pinned: false
-app_port: 8000
+app_port: 7860
 tags:
   - openenv
   - reinforcement-learning
