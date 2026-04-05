@@ -1,0 +1,13 @@
+name: MetaOCT
+version: 1.0.0
+description: "Medical Explainable AI - Optical Coherence Tomography Environment"
+entrypoint: "env:MetaOCTEnv"
+
+environment:
+  python: ">=3.10"
+  dependencies:
+    - numpy
+    - opencv-python
+    - pydantic
+    - python-dotenv
+    - openenv-core

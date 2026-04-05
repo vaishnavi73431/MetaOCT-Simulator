@@ -1,0 +1,702 @@
+{
+    "medmnist_CNV_1.jpg": {
+        "label": "CNV",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "subretinal fluid",
+            "rpe elevation",
+            "neovascularization"
+        ]
+    },
+    "medmnist_CNV_2.jpg": {
+        "label": "CNV",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "subretinal fluid",
+            "rpe elevation",
+            "neovascularization"
+        ]
+    },
+    "medmnist_CNV_3.jpg": {
+        "label": "CNV",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "subretinal fluid",
+            "rpe elevation",
+            "neovascularization"
+        ]
+    },
+    "medmnist_NORMAL_1.jpg": {
+        "label": "NORMAL",
+        "box": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                0
+            ]
+        ],
+        "keywords": [
+            "normal foveal contour",
+            "intact rpe"
+        ]
+    },
+    "medmnist_NORMAL_2.jpg": {
+        "label": "NORMAL",
+        "box": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                0
+            ]
+        ],
+        "keywords": [
+            "normal foveal contour",
+            "intact rpe"
+        ]
+    },
+    "medmnist_CNV_4.jpg": {
+        "label": "CNV",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "subretinal fluid",
+            "rpe elevation",
+            "neovascularization"
+        ]
+    },
+    "medmnist_NORMAL_3.jpg": {
+        "label": "NORMAL",
+        "box": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                0
+            ]
+        ],
+        "keywords": [
+            "normal foveal contour",
+            "intact rpe"
+        ]
+    },
+    "medmnist_CNV_5.jpg": {
+        "label": "CNV",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "subretinal fluid",
+            "rpe elevation",
+            "neovascularization"
+        ]
+    },
+    "medmnist_NORMAL_4.jpg": {
+        "label": "NORMAL",
+        "box": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                0
+            ]
+        ],
+        "keywords": [
+            "normal foveal contour",
+            "intact rpe"
+        ]
+    },
+    "medmnist_DRUSEN_1.jpg": {
+        "label": "DRUSEN",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "rpe deposits",
+            "drusen"
+        ]
+    },
+    "medmnist_NORMAL_5.jpg": {
+        "label": "NORMAL",
+        "box": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                0
+            ]
+        ],
+        "keywords": [
+            "normal foveal contour",
+            "intact rpe"
+        ]
+    },
+    "medmnist_DME_1.jpg": {
+        "label": "DME",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "intraretinal cysts",
+            "thickening",
+            "edema"
+        ]
+    },
+    "medmnist_CNV_6.jpg": {
+        "label": "CNV",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "subretinal fluid",
+            "rpe elevation",
+            "neovascularization"
+        ]
+    },
+    "medmnist_DRUSEN_2.jpg": {
+        "label": "DRUSEN",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "rpe deposits",
+            "drusen"
+        ]
+    },
+    "medmnist_CNV_7.jpg": {
+        "label": "CNV",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "subretinal fluid",
+            "rpe elevation",
+            "neovascularization"
+        ]
+    },
+    "medmnist_NORMAL_6.jpg": {
+        "label": "NORMAL",
+        "box": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                0
+            ]
+        ],
+        "keywords": [
+            "normal foveal contour",
+            "intact rpe"
+        ]
+    },
+    "medmnist_CNV_8.jpg": {
+        "label": "CNV",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "subretinal fluid",
+            "rpe elevation",
+            "neovascularization"
+        ]
+    },
+    "medmnist_DME_2.jpg": {
+        "label": "DME",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "intraretinal cysts",
+            "thickening",
+            "edema"
+        ]
+    },
+    "medmnist_CNV_9.jpg": {
+        "label": "CNV",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "subretinal fluid",
+            "rpe elevation",
+            "neovascularization"
+        ]
+    },
+    "medmnist_CNV_10.jpg": {
+        "label": "CNV",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "subretinal fluid",
+            "rpe elevation",
+            "neovascularization"
+        ]
+    },
+    "medmnist_NORMAL_7.jpg": {
+        "label": "NORMAL",
+        "box": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                0
+            ]
+        ],
+        "keywords": [
+            "normal foveal contour",
+            "intact rpe"
+        ]
+    },
+    "medmnist_DRUSEN_3.jpg": {
+        "label": "DRUSEN",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "rpe deposits",
+            "drusen"
+        ]
+    },
+    "medmnist_NORMAL_8.jpg": {
+        "label": "NORMAL",
+        "box": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                0
+            ]
+        ],
+        "keywords": [
+            "normal foveal contour",
+            "intact rpe"
+        ]
+    },
+    "medmnist_DME_3.jpg": {
+        "label": "DME",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "intraretinal cysts",
+            "thickening",
+            "edema"
+        ]
+    },
+    "medmnist_NORMAL_9.jpg": {
+        "label": "NORMAL",
+        "box": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                0
+            ]
+        ],
+        "keywords": [
+            "normal foveal contour",
+            "intact rpe"
+        ]
+    },
+    "medmnist_DRUSEN_4.jpg": {
+        "label": "DRUSEN",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "rpe deposits",
+            "drusen"
+        ]
+    },
+    "medmnist_NORMAL_10.jpg": {
+        "label": "NORMAL",
+        "box": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                0
+            ]
+        ],
+        "keywords": [
+            "normal foveal contour",
+            "intact rpe"
+        ]
+    },
+    "medmnist_DME_4.jpg": {
+        "label": "DME",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "intraretinal cysts",
+            "thickening",
+            "edema"
+        ]
+    },
+    "medmnist_DRUSEN_5.jpg": {
+        "label": "DRUSEN",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "rpe deposits",
+            "drusen"
+        ]
+    },
+    "medmnist_DME_5.jpg": {
+        "label": "DME",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "intraretinal cysts",
+            "thickening",
+            "edema"
+        ]
+    },
+    "medmnist_DRUSEN_6.jpg": {
+        "label": "DRUSEN",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "rpe deposits",
+            "drusen"
+        ]
+    },
+    "medmnist_DME_6.jpg": {
+        "label": "DME",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "intraretinal cysts",
+            "thickening",
+            "edema"
+        ]
+    },
+    "medmnist_DRUSEN_7.jpg": {
+        "label": "DRUSEN",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "rpe deposits",
+            "drusen"
+        ]
+    },
+    "medmnist_DRUSEN_8.jpg": {
+        "label": "DRUSEN",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "rpe deposits",
+            "drusen"
+        ]
+    },
+    "medmnist_DRUSEN_9.jpg": {
+        "label": "DRUSEN",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "rpe deposits",
+            "drusen"
+        ]
+    },
+    "medmnist_DME_7.jpg": {
+        "label": "DME",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "intraretinal cysts",
+            "thickening",
+            "edema"
+        ]
+    },
+    "medmnist_DRUSEN_10.jpg": {
+        "label": "DRUSEN",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "rpe deposits",
+            "drusen"
+        ]
+    },
+    "medmnist_DME_8.jpg": {
+        "label": "DME",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "intraretinal cysts",
+            "thickening",
+            "edema"
+        ]
+    },
+    "medmnist_DME_9.jpg": {
+        "label": "DME",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "intraretinal cysts",
+            "thickening",
+            "edema"
+        ]
+    },
+    "medmnist_DME_10.jpg": {
+        "label": "DME",
+        "box": [
+            [
+                80,
+                80
+            ],
+            [
+                150,
+                150
+            ]
+        ],
+        "keywords": [
+            "intraretinal cysts",
+            "thickening",
+            "edema"
+        ]
+    }
+}
