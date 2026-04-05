@@ -1,13 +1,30 @@
 name: MetaOCT
 version: 1.0.0
-description: "Medical Explainable AI - Optical Coherence Tomography Environment"
+description: "Medical Explainable AI - Optical Coherence Tomography POMDP Environment"
 entrypoint: "env:MetaOCTEnv"
+space_url: "https://vaish6-metaoct-simulator.hf.space"
+
+tasks:
+  - id: easy
+    description: "Basic POMDP traversal with $1000 budget"
+  - id: medium
+    description: "Precision optimization with $400 budget"
+  - id: hard
+    description: "Extreme resource constraints with $200 budget"
+
+endpoints:
+  reset: "/reset"
+  step: "/step"
+  validate: "/validate"
 
 environment:
   python: ">=3.10"
   dependencies:
     - numpy
-    - opencv-python
+    - opencv-python-headless
     - pydantic
     - python-dotenv
     - openenv-core
+    - torch
+    - transformers
+    - openai
