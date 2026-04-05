@@ -142,13 +142,20 @@ class OpenEnvHandler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    # Pre-warm environment
-    print("[INFO] Pre-warming MetaOCT environment...", flush=True)
-    get_env("easy")
-    print("[INFO] Environment ready.", flush=True)
-
     port = int(os.getenv("GRADIO_SERVER_PORT", "7860"))
+    
+    # Start HTTP server IMMEDIATELY so checker can connect
+    server = HTTPServer(("0.0.0.0", port), OpenEnvHandler)
     print(f"[INFO] MetaOCT OpenEnv API running on port {port}", flush=True)
     print(f"[INFO] Endpoints: POST /reset, POST /step, GET /validate", flush=True)
-    server = HTTPServer(("0.0.0.0", port), OpenEnvHandler)
+    
+    # Pre-warm environment in background thread
+    def prewarm():
+        print("[INFO] Pre-warming MetaOCT environment...", flush=True)
+        get_env("easy")
+        print("[INFO] Environment ready.", flush=True)
+    
+    t = threading.Thread(target=prewarm, daemon=True)
+    t.start()
+    
     server.serve_forever()
