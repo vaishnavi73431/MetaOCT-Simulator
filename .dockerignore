@@ -1,0 +1,13 @@
+.git
+.gitignore
+.env
+__pycache__
+*.pyc
+logs/
+*.log
+play_gent_repo/
+winner_repo/
+mini_oct_dataset*.zip
+.ipynb_checkpoints
+.venv
+venv
