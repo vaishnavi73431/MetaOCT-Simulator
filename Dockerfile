@@ -1,12 +1,12 @@
-FROM python:3.10-slim
+FROM python:3.10-bullseye
 
 WORKDIR /app
 
 # Install dependencies as Root
 COPY pyproject.toml .
-RUN pip install uv && uv pip install --system \
-    openenv-core pydantic numpy opencv-python-headless python-dotenv requests \
-    "openai>=1.0.0" "transformers>=4.40.0" torch torchvision Pillow
+RUN pip install uv && \
+    uv pip install --system --index-url https://download.pytorch.org/whl/cpu torch torchvision && \
+    uv pip install --system openenv-core pydantic numpy opencv-python-headless python-dotenv requests "openai>=1.0.0" "transformers>=4.40.0" Pillow
 
 # Setup Non-Root User for Hugging Face Spaces Security Policy
 RUN useradd -m -u 1000 user
