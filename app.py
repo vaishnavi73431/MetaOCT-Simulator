@@ -61,28 +61,22 @@ class OpenEnvHandler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
-        if self.path == "/validate" or self.path == "/openenv/validate":
+        if self.path == "/validate" or self.path == "/openenv/validate" or self.path == "/openenv/info":
+            task_list = [
+                {"id": "easy", "name": "Easy POMDP Diagnosis", "difficulty": "easy", "budget": 1000, "description": "Basic POMDP traversal", "grader": "tasks:grade_easy"},
+                {"id": "medium", "name": "Medium Accuracy POMDP", "difficulty": "medium", "budget": 400, "description": "Precision optimization", "grader": "tasks:grade_medium"},
+                {"id": "hard", "name": "Hard Zero-Shot POMDP", "difficulty": "hard", "budget": 200, "description": "Extreme resource constraints", "grader": "tasks:grade_hard"}
+            ]
             self.send_json(200, {
                 "status": "ok",
-                "name": "MetaOCT-Simulator",
+                "name": "MetaOCT",
                 "version": "1.0.0",
-                "tasks": ["easy", "medium", "hard"],
+                "description": "Multi-step POMDP clinical OCT diagnostic environment",
+                "tasks": task_list,
                 "action_space": ["request_oct_scan", "enhance_contrast", "measure_fluid_thickness", "submit_diagnosis"],
                 "observation_space": ["acquired_scans", "available_budget", "tool_outputs", "step_count"]
             })
         elif self.path == "/" or self.path == "/health":
-            self.send_json(200, {"status": "running", "env": "MetaOCT-Simulator"})
-        elif self.path == "/openenv/info":
-            self.send_json(200, {
-                "name": "MetaOCT-Simulator",
-                "description": "Multi-step POMDP clinical OCT diagnostic environment",
-                "tasks": [
-                    {"id": "easy", "name": "Easy POMDP Diagnosis", "difficulty": "easy", "budget": 1000, "description": "Basic POMDP traversal", "grader": "tasks:grade_easy"},
-                    {"id": "medium", "name": "Medium Accuracy POMDP", "difficulty": "medium", "budget": 400, "description": "Precision optimization", "grader": "tasks:grade_medium"},
-                    {"id": "hard", "name": "Hard Zero-Shot POMDP", "difficulty": "hard", "budget": 200, "description": "Extreme resource constraints", "grader": "tasks:grade_hard"}
-                ]
-            })
-        else:
             self.send_json(404, {"error": "Not found"})
 
     def do_POST(self):
