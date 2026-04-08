@@ -151,15 +151,14 @@ def get_heuristic_action(step: int, obs: Observation, client: OpenAI) -> Action:
 async def evaluate_agent(max_patients=3):
     client = OpenAI(base_url=API_BASE_URL, api_key=API_KEY)
     
-    global_rewards: List[float] = []
-    global_steps = 0
-    total_score = 0.0
-    
     difficulties = ["easy", "medium", "hard"]
     
-    log_start(task=TASK_NAME, env=BENCHMARK, model=MODEL_NAME)
-    
     for diff in difficulties:
+        global_rewards: List[float] = []
+        global_steps = 0
+        total_score = 0.0
+        
+        log_start(task=diff, env=BENCHMARK, model=MODEL_NAME)
         env = MetaOCTEnv(difficulty=diff)
         
         for p_idx in range(min(env.max_patients, max_patients)):
@@ -185,10 +184,10 @@ async def evaluate_agent(max_patients=3):
                     break
         await env.close()
                     
-    max_total = float(len(global_rewards))
-    total_score = sum(global_rewards) / max_total if max_total > 0 else 0.0
-    success = total_score >= 0.7
-    log_end(success=success, steps=global_steps, score=total_score, rewards=global_rewards)
+        max_total = float(len(global_rewards))
+        total_score = sum(global_rewards) / max_total if max_total > 0 else 0.0
+        success = total_score >= 0.7
+        log_end(success=success, steps=global_steps, score=total_score, rewards=global_rewards)
 
 if __name__ == "__main__":
     asyncio.run(evaluate_agent(max_patients=3))
