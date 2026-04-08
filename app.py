@@ -77,7 +77,7 @@ class OpenEnvHandler(BaseHTTPRequestHandler):
                 "observation_space": ["acquired_scans", "available_budget", "tool_outputs", "step_count"]
             })
         elif self.path == "/" or self.path == "/health":
-            self.send_json(404, {"error": "Not found"})
+            self.send_json(200, {"status": "ok", "message": "MetaOCT API Server is running. Use /validate, /reset, /step endpoints."})
 
     def do_POST(self):
         try:
