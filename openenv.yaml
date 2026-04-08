@@ -7,10 +7,13 @@ space_url: "https://vaish6-metaoct-simulator.hf.space"
 tasks:
   - id: easy
     description: "Basic POMDP traversal with $1000 budget"
+    grader: "tasks:grade_easy"
   - id: medium
     description: "Precision optimization with $400 budget"
+    grader: "tasks:grade_medium"
   - id: hard
     description: "Extreme resource constraints with $200 budget"
+    grader: "tasks:grade_hard"
 
 endpoints:
   reset: "/reset"
