@@ -77,9 +77,9 @@ class OpenEnvHandler(BaseHTTPRequestHandler):
                 "name": "MetaOCT-Simulator",
                 "description": "Multi-step POMDP clinical OCT diagnostic environment",
                 "tasks": [
-                    {"id": "easy", "budget": 1000, "description": "Basic POMDP traversal"},
-                    {"id": "medium", "budget": 400, "description": "Precision optimization"},
-                    {"id": "hard", "budget": 200, "description": "Extreme resource constraints"}
+                    {"id": "easy", "name": "Easy POMDP Diagnosis", "difficulty": "easy", "budget": 1000, "description": "Basic POMDP traversal", "grader": "tasks:grade_easy"},
+                    {"id": "medium", "name": "Medium Accuracy POMDP", "difficulty": "medium", "budget": 400, "description": "Precision optimization", "grader": "tasks:grade_medium"},
+                    {"id": "hard", "name": "Hard Zero-Shot POMDP", "difficulty": "hard", "budget": 200, "description": "Extreme resource constraints", "grader": "tasks:grade_hard"}
                 ]
             })
         else:
